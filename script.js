@@ -43,3 +43,12 @@ function y2 (t, k) {
     return Math.cos(Math.sqrt(k)*t) - Math.sin(Math.sqrt(3*k)*t); 
 }
 
+
+// Recarrega a página ao clicar no botão   
+document.querySelector('.btn').addEventListener('click', function() {
+    location.reload();
+});
+window.addEventListener('resize', function() {
+    location.reload();
+});
+

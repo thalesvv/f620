@@ -1,16 +1,21 @@
+* {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smoth-scroll;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+  text-align: center;
 }
 
 main {
-    max-width: 900px;
-    margin: auto;
-    height: 100%;
+  margin: auto;
+  height: 100%;
+}
+.row {
+  min-height: 100vh;
+  gap: 15px;
+}
+
+svg {
+  min-height: 300px;
 }
