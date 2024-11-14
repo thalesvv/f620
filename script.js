@@ -44,11 +44,12 @@ function y2 (t, k) {
 }
 
 
-// Recarrega a página ao clicar no botão   
-document.querySelector('.btn').addEventListener('click', function() {
-    location.reload();
-});
+// Recarrega a página ao redimensionar  
+let resizeTimeout;
 window.addEventListener('resize', function() {
-    location.reload();
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function() {
+        location.reload();
+    }, 300);
 });
 
